@@ -21,7 +21,7 @@ display_board(test_board)
 
 # Step 2: Write a function that can take in a player input and assign their marker as 'X' or 'O'. Think about using while loops to continually ask until you get a correct answer.
 
-def x_or_o():
+def player_input():
     marker = ' '
 
     while marker != 'X' and marker != 'O':
@@ -35,7 +35,7 @@ def x_or_o():
         
     return (player1, player2)
     
-x_or_o()
+player_input()
 
 
     
@@ -43,7 +43,10 @@ x_or_o()
 # Step 3: Write a function that takes in the board list object, a marker ('X' or 'O'), and a desired position (number 1-9) and assigns it to the board
 
 def place_marker(board, marker, position):
-    pass
+    position = input('Where would you like to move? (1-9): ')
+    board[position] = marker
+
+    
 
 # Step 4: Write a function that takes in a board and a mark (X or O) and then checks to see if that mark has won
 
