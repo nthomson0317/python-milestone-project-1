@@ -44,9 +44,11 @@ player_input()
 
 def place_marker(board, marker, position):
     position = input('Where would you like to move? (1-9): ')
-    board[position] = marker
+    position_int = int(position)
+    board[position_int] = marker
 
-    
+place_marker(test_board,'$',8)
+display_board(test_board)
 
 # Step 4: Write a function that takes in a board and a mark (X or O) and then checks to see if that mark has won
 
