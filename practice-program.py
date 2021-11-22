@@ -27,3 +27,33 @@ def replacement_choice(game_list, position):
 replacement_choice(game_list, 1)
 
 print(game_list)
+
+def gameon_choice():
+
+    choice = 'wrong'
+
+    while choice not in ['Y', 'N']:
+        choice = input('Keep playing? (Y or N) ')
+
+        if choice not in ['Y', 'N']:
+            print('Sorry I dont understand. Please choose Y or N')
+    if choice == 'Y':
+        return True
+    else:
+        return False
+
+gameon_choice()
+
+game_on = True
+game_list = [0,1,2]
+
+while game_on:
+    display_game(game_list)
+
+    position = position_choice()
+
+    game_list = replacement_choice(game_list, position)
+
+    display_game(game_list)
+
+    game_on = gameon_choice()
