@@ -22,18 +22,18 @@ display_board(test_board)
 # Step 2: Write a function that can take in a player input and assign their marker as 'X' or 'O'. Think about using while loops to continually ask until you get a correct answer.
 
 def x_or_o():
-    marker = 'unassigned'
+    marker = ' '
 
     while marker != 'X' and marker != 'O':
         marker = input('Player 1, choose X or O: ')
         player1 = marker
         
-        if player1 == 'X':
+    if player1 == 'X':
             player2 = 'O'
-        else:
+    else:
             player2 = 'X'
-        print(player1,player2)
-        return (player1, player2)
+        
+    return (player1, player2)
     
 x_or_o()
 
