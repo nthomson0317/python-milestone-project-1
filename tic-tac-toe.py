@@ -118,3 +118,21 @@ def player_choice(board):
             print('Sorry, that space is already taken. Please try again. ')
         
 print(player_choice(test_board_2))
+
+# Step 9: Write a function that asks the player if they want to play again and returns a boolean True if they do want to play again.
+
+def replay():
+    hold = True
+    while hold == True:
+        play_again = input('Would you like to play again? (Y/N): ')
+
+        if play_again == 'Y':
+            hold = False
+            return True
+        elif play_again == 'N':
+            hold = False
+            return False
+        else:
+            print('Sorry, please choose Y or N')
+
+replay()
