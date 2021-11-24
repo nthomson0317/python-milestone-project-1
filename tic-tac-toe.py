@@ -79,3 +79,14 @@ def choose_first():
         print('Player 2 goes first')
 
 choose_first()
+
+# Step 6: Write a function that returns a boolean indicating whether a space on the board is freely available.
+
+def space_check(board, position):
+
+    if board[position] == ' ':
+        return True
+    else:
+        return False
+
+print(space_check(test_board, 1))
