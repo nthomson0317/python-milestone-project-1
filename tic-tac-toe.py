@@ -1,4 +1,5 @@
 import os
+import random
 
 # 2 players should be able to play the game (both sitting at the computer)
 
@@ -71,4 +72,10 @@ print(win_check(test_board,'X'))
 # Step 5: Write a function that uses the random module to randomly decide which player goes first. You may want to lookup random.randint(). Return a string of which player went first.
 
 def choose_first():
-    pass
+    first = random.randint(0,2)
+    if first == 1:
+        print('Player 1 goes first')
+    elif first == 2:
+        print('Player 2 goes first')
+
+choose_first()
