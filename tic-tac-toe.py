@@ -103,3 +103,16 @@ def full_board_check(board):
 
 print('Full board check: ')
 print(full_board_check(test_board))
+
+# Step 8: Write a function that asks for a player's next position (as a number 1-9) and then uses the function from step 6 to check if it's a free position. If it is, then return the position for later use.
+
+def player_choice(board):
+    position = input('Input next position (1-9): ')
+    if space_check(board,position):
+        return position
+    else:
+        print('Sorry, that space is already taken. Please try again. ')
+        player_choice(board)
+
+    
+    pass
