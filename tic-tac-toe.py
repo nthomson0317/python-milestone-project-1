@@ -89,4 +89,17 @@ def space_check(board, position):
     else:
         return False
 
+print('Space check: ')
 print(space_check(test_board, 1))
+
+#Step 7: Write a function that checks if the board is full and returns a boolean value. True if full, False otherwise.
+
+def full_board_check(board):
+    empty = ' '
+    if empty not in board:
+        return True
+    else:
+        return False
+
+print('Full board check: ')
+print(full_board_check(test_board))
