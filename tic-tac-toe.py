@@ -1,4 +1,4 @@
-import os
+
 import random
 
 # 2 players should be able to play the game (both sitting at the computer)
@@ -136,3 +136,5 @@ def replay():
             print('Sorry, please choose Y or N')
 
 replay()
+
+# Step 10: Here comes the hard part! Use while loops and the functions you've made to run the game!
